@@ -22,7 +22,11 @@ Computer Science graduate (FAST-NUCES, Islamabad) and Backend Development Intern
 
 ## Selected Projects
 ### Questor: Hybrid AI Framework for Financial Fraud Detection
-Developed as part of a research team, working across the whole project (Python, ML, NLP). Team repository: [Questor](https://github.com/ChaudaryAbdullah/Questor) ([my fork](https://github.com/ItraAqeel/Questor)). The framework combines three components into one explainable fraud risk score for companies, built from financial data and SEC 10-K filings:
+Research team project (Python, ML, NLP). Team repository: [Questor](https://github.com/ChaudaryAbdullah/Questor) ([my fork](https://github.com/ItraAqeel/Questor)). The framework combines three components into one explainable fraud risk score for companies, built from financial data and SEC 10-K filings.
+
+**My contribution:** data collection, training and evaluating the machine learning models (XGBoost, Isolation Forest, Random Forest), and writing the research paper.
+
+The framework:
 - **Structured pipeline:** a weighted ensemble of 17 models, covering classifiers (CatBoost, XGBoost, LightGBM, Random Forest, SVM, neural networks) and anomaly detectors (Isolation Forest, One-Class SVM, LOF, Autoencoder), with weights based on training AUC.
 - **Unstructured pipeline:** NLP analysis of SEC filings with FinBERT, linked to a Neo4j knowledge graph of companies, executives and transactions, with ChromaDB for fast document retrieval.
 - **Rule-based agents:** 15 financial fraud agents (Altman Z-Score, Beneish M-Score, Benford's Law, accrual and cash-flow checks, and others) that explain which red flags drive a score.
